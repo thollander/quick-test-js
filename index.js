@@ -25,6 +25,20 @@ const ex3 = pipe(
 assert.deepStrictEqual([1, 2, 3].map(ex3), ['3', '4', '9']);
 console.log('🎉 Ex3 OK🎉 ');
 
+/* ex4
+// fix editY2 implementation
+const obj1 = { x: { y: 1 } }
+const obj2 = { x: obj1.x }
+
+function editY2(x) {
+  obj2.x.y = x
+}
+
+editY2(2)
+assert.strictEqual(obj1.x.y, 1)
+assert.strictEqual(obj2.x.y, 2)
+console.log('🎉 Ex4 OK🎉 ');
+
 /*
  * Thanks
  */
